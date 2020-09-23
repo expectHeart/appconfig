@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: provider
+  datasource:
+    url: jdbc:mysql://172.16.8.100:3306/tvmall?useUnicode=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+server:
+  port: 9001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.16.8.100:8081/eureka
+
+mybatis:
+  type-aliases-package: cn.yunhe.java.pojo
+
+info:
+  application-name: 这个服务是电视商城用户服务提供者
+
