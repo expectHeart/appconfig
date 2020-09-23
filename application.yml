@@ -7,11 +7,6 @@ spring:
     password: 123456
 server:
   port: 9001
-eureka:
-  client:
-    service-url:
-      defaultZone: http://172.16.8.100:8081/eureka
-
 mybatis:
   type-aliases-package: cn.yunhe.java.pojo
 
